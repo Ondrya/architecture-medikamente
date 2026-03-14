@@ -1,0 +1,90 @@
+<mxfile host="65bd71144e">
+    <diagram name="Страница-1" id="ZzSO0HSaltNb6d3pCdJW">
+        <mxGraphModel dx="769" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="DCX4LVikxhdBv0EoBPHS-1" value="Пациент&lt;div&gt;(портал)&lt;/div&gt;" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="40" y="110" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="DCX4LVikxhdBv0EoBPHS-2" value="&lt;h2 style=&quot;margin-top: 24px; margin-bottom: 16px; line-height: 1.25; padding-bottom: 0.3em; border-bottom: 1px solid rgb(216, 222, 228); color: rgb(36, 41, 47); font-family: &amp;quot;Noto Sans&amp;quot;, &amp;quot;SF Pro SC&amp;quot;, &amp;quot;SF Pro Text&amp;quot;, &amp;quot;SF Pro Icons&amp;quot;, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; text-align: start;&quot;&gt;&lt;span style=&quot;background-color: rgba(255, 255, 255, 0.05);&quot;&gt;Процесс регистрации пациента (PII)&lt;/span&gt;&lt;/h2&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="40" width="740" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="CedYEo-kFDkuryIsJl8F-2" value="Защищенная регистрация (TLS)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#D5E8D4;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="80" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="CedYEo-kFDkuryIsJl8F-3" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Данные пациента &lt;br&gt;(TLS)&lt;/span&gt;" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#00FF00;" parent="1" source="DCX4LVikxhdBv0EoBPHS-1" target="CedYEo-kFDkuryIsJl8F-2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="430" y="410" as="sourcePoint"/>
+                        <mxPoint x="480" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="CedYEo-kFDkuryIsJl8F-4" value="Keycloak (IAM)" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="90" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="CedYEo-kFDkuryIsJl8F-5" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Учетные &lt;br&gt;данные&lt;/span&gt;" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#00FF00;" parent="1" source="CedYEo-kFDkuryIsJl8F-2" target="CedYEo-kFDkuryIsJl8F-4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="430" y="410" as="sourcePoint"/>
+                        <mxPoint x="480" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="d7V9GwQT0YncmaANldF_-1" value="Аудит доступа" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="180" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="d7V9GwQT0YncmaANldF_-2" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Лог доступа&lt;/span&gt;" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FF0000;" parent="1" source="CedYEo-kFDkuryIsJl8F-2" target="d7V9GwQT0YncmaANldF_-1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="500" y="220" as="sourcePoint"/>
+                        <mxPoint x="700" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="d7V9GwQT0YncmaANldF_-3" value="Верификация личности" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#D5E8D4;" parent="1" vertex="1">
+                    <mxGeometry x="316" y="230" width="90" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" style="edgeStyle=none;html=1;fillColor=#d5e8d4;strokeColor=#66FF66;strokeWidth=2;" edge="1" parent="1" source="d7V9GwQT0YncmaANldF_-4" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="На отдельный &lt;br&gt;сервер" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3">
+                    <mxGeometry x="-0.2833" relative="1" as="geometry">
+                        <mxPoint x="-9" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="d7V9GwQT0YncmaANldF_-4" value="Шифрование, токенизация" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#D5E8D4;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="380" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="d7V9GwQT0YncmaANldF_-5" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Верификация&lt;/span&gt;" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#00FF00;" parent="1" source="CedYEo-kFDkuryIsJl8F-2" target="d7V9GwQT0YncmaANldF_-3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="490" y="280" as="sourcePoint"/>
+                        <mxPoint x="690" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="d7V9GwQT0YncmaANldF_-6" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Шифрование&lt;/span&gt;" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#00FF00;" parent="1" source="d7V9GwQT0YncmaANldF_-3" target="d7V9GwQT0YncmaANldF_-4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="210" as="sourcePoint"/>
+                        <mxPoint x="390" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="d7V9GwQT0YncmaANldF_-7" value="Хранилище документов (AES-256)" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#FFF2CC;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="560" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="d7V9GwQT0YncmaANldF_-8" value="База пациентов (TDE)" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#FFF2CC;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="400" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="d7V9GwQT0YncmaANldF_-9" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Сканы документов,&lt;br&gt;по токенам&lt;/span&gt;" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#00FF00;" parent="1" source="d7V9GwQT0YncmaANldF_-4" target="d7V9GwQT0YncmaANldF_-7" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="520" y="520" as="sourcePoint"/>
+                        <mxPoint x="520" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="d7V9GwQT0YncmaANldF_-10" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Зашифрованные&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;данные&lt;/span&gt;&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#00FF00;" parent="1" source="d7V9GwQT0YncmaANldF_-4" target="d7V9GwQT0YncmaANldF_-8" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="560" y="620" as="sourcePoint"/>
+                        <mxPoint x="560" y="700" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="Хранилище ключей&lt;br&gt;шифрования&lt;br&gt;(Vault)" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#FFF2CC;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="400" width="140" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
